@@ -16,11 +16,13 @@ build/
 .env.*.local
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# Allow .vscode folder for project settings
+!.vscode/
 
 # OS
 .DS_Store
