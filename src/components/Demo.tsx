@@ -1,6 +1,7 @@
 import { SplineScene } from "@/components/ui/spline";
 import { Card } from "@/components/ui/card"
 import { Spotlight } from "@/components/ui/spotlight"
+import { InteractiveSpotlight } from "@/components/ui/interactive-spotlight"
 
 export function SplineSceneBasic() {
     return (
@@ -8,6 +9,13 @@ export function SplineSceneBasic() {
             <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="white"
+            />
+
+            {/* Interactive cursor-following spotlight */}
+            <InteractiveSpotlight
+                className="from-white/40 via-white/20 to-transparent"
+                size={400}
+                springOptions={{ stiffness: 100, damping: 20 }}
             />
 
             <div className="flex h-full">
